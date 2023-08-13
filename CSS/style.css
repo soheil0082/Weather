@@ -101,21 +101,89 @@ section {
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
-  margin: 80px 0px;
-  padding: 0px 250px;
+  gap: 4.5rem;
+  padding: 0 300px;
+  margin: 80px;
   margin-bottom: 50px;
   flex-wrap: wrap;
-  justify-content: space-between;
-  height: 300px;
+  height: 350px;
   overflow-y: scroll;
 }
 
 .card {
-  width: 250px;
-  height: 300px;
-  background-color: #b05150;
+  width: 300px;
+  height: 350px;
   border-radius: 15px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: #fff;
+}
+
+.weather-icon {
+  width: 70px;
+  margin-top: 10px;
+}
+
+.card h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card h3 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.minMax {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 15px;
+}
+
+.col img {
+  width: 30px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.currentCity {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+  color: #fff;
+}
+
+.temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.--main {
+  width: 170px;
 }
 
 @keyframes reveal {

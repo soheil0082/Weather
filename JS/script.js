@@ -107,7 +107,7 @@ function renderCards() {
   cities.forEach((item) => {
     cardArchive.innerHTML += `
     <div class="card">
-    <img src="Img/${item.imgtoLowerCase()}.png" class="weather-icon" />
+    <img src="Img/${item.img.toLowerCase()}.png" class="weather-icon" />
     <h2 class="city">${item.name}</h2>
     <h3 class="temp">${item.temp}°C</h3>
     <div class="minMax">

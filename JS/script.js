@@ -29,7 +29,7 @@ function searchCity(e) {
       console.log(data);
       currentCity.innerHTML = `
       <div class="name">
-      <img src="Img/${data.weather[0].main}.png" class="weather-icon --main" />
+      <img src="Img/${data.weather[0].main.toLowerCase()}.png" class="weather-icon --main" />
       <h2 class="city">${data.name}</h2>
     </div>
     <div class="temp">
@@ -107,7 +107,7 @@ function renderCards() {
   cities.forEach((item) => {
     cardArchive.innerHTML += `
     <div class="card">
-    <img src="Img/${item.img}.png" class="weather-icon" />
+    <img src="Img/${item.imgtoLowerCase()}.png" class="weather-icon" />
     <h2 class="city">${item.name}</h2>
     <h3 class="temp">${item.temp}°C</h3>
     <div class="minMax">
